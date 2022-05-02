@@ -23,7 +23,7 @@ while True:
 		time.sleep(data['ttl'] / 2) #Should never skip an update. It will write most times twice, but it'll just replace it the second time, so there won't be duplicates.
 	except KeyboardInterrupt:
 		print("KeyboardInterrupt")
-		raise KeyboardInterrupt #We want the next except to catch anything, but since literally the entire thing is in a try, we need to catch, and then reraise, keyboard inturrupts so they actually stop it.
+		raise KeyboardInterrupt #We want the next except to catch anything, but since literally the entire thing is in a try, we need to catch, and then reraise, keyboard inturrupts so they actuallly stop it.
 	except:
 		print("An Exception occured")
 		time.sleep(5) #Wait 5 seconds then try again.
